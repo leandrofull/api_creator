@@ -1,5 +1,5 @@
 <?php
-    define('APP_PATH', 'C:\Users\user\Desktop\api_project');
+    define('APP_PATH', /* PROJECT PATH HERE */);
     define('CONFIG_PATH', APP_PATH."/config");
     define('CONTROLLERS_PATH', APP_PATH."/controllers");
     define('PUBLIC_PATH', APP_PATH."/public");
