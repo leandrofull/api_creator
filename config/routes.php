@@ -4,7 +4,9 @@
     use App\Request\Response;
     use App\Request\Route;
 
-    Route::post('/clientes/:id', ['ClientesController', 'create']);
+    Route::post('/example', ['ExampleController', 'create']);
+
+    Route::put('/example/:id', ['ExampleController', 'update']);
 
     Route::default(function(Response $response) {
         $response->error(404, 'Not Found!');
