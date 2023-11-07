@@ -47,5 +47,10 @@
         public function body(): ?\stdClass {
             return $this->requestBody;
         }
+
+        public function header(string $key): ?string {
+            if(!isset(apache_request_headers()[$key])) return NULL;
+            return apache_request_headers()[$key];
+        }
     }
 ?>

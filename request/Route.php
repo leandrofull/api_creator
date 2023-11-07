@@ -38,6 +38,10 @@
             self::add('POST', $ep, $ct);
         }
 
+        public static function put(string $ep, array $ct): void {
+            self::add('PUT', $ep, $ct);
+        }
+
         public static function default(\Closure $cb): void {
             $cb(Response::getInstance());
             exit;
