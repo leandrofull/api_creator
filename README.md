@@ -21,7 +21,7 @@ Project in progress made only with PHP...
 -> ExampleResource.php: An example of how to create a resource. A resource is responsible for formatting and validating input data, returning false for fields with invalid data and ignoring fields those that should not have arrived;
 -> ResourceInterface.php: By default all resources must implement this interface so that they maintain a standard.
 
-=======================================================================================================================================
+===== AND MORE =====
 
 🛑In progress:
 -> /models, .env.example, auth...
