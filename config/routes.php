@@ -4,6 +4,8 @@
     use App\Request\Response;
     use App\Request\Route;
 
+    Route::get('/example/:id', ['ExampleController', 'get']);
+
     Route::post('/example', ['ExampleController', 'create']);
 
     Route::put('/example/:id', ['ExampleController', 'update']);

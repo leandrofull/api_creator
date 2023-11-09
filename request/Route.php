@@ -4,7 +4,7 @@
     require_once REQUEST_PATH."/Request.php";
     require_once REQUEST_PATH."/Response.php";
 
-    class Route {
+    abstract class Route {
         private static function add(string $mt, string $ep, array $ct): void {
             $request = Request::getInstance();
 
@@ -40,6 +40,14 @@
 
         public static function put(string $ep, array $ct): void {
             self::add('PUT', $ep, $ct);
+        }
+
+        public static function patch(string $ep, array $ct): void {
+            self::add('PATCH', $ep, $ct);
+        }
+
+        public static function delete(string $ep, array $ct): void {
+            self::add('DELETE', $ep, $ct);
         }
 
         public static function default(\Closure $cb): void {
